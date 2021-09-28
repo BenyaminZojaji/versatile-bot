@@ -107,7 +107,7 @@ def agmx1(m):
         bot.send_message(m.chat.id, 'now tell me your command.')
 @bot.message_handler(commands=['qrcode'])
 def qrcode_func(m):
-    msg = bot.send_message(m.chat.id, 'Just give me your text/url/... , ^^ e.g. www.sample.com')
+    msg = bot.send_message(m.chat.id, 'Just give me your text/url/... , ^^\ne.g. www.sample.com')
     bot.register_next_step_handler(msg, qr1)
 def qr1(m):
     if not m.text.startswith('/'):
@@ -119,7 +119,7 @@ def qr1(m):
         except:
             bot.send_message(m.chat.id, 'something is wrong. Call my dad 😭\n@mrbni Error code:qr1')
     else:
-        bot.reply_to(m, 'I expect numbers not a command. 🤔')
+        bot.reply_to(m, 'I expect something else, not a command. 🤔')
         bot.send_message(m.chat.id, 'now tell me your command.')
 @bot.message_handler(commands=['help'])
 def help_func(message):
