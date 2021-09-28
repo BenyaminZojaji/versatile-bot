@@ -1,0 +1,4 @@
+khayyam
+gTTS
+pyTelegramBotAPI
+qrcode
