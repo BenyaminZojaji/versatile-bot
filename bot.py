@@ -107,7 +107,7 @@ def agmx1(m):
         bot.send_message(m.chat.id, 'now tell me your command.')
 @bot.message_handler(commands=['qrcode'])
 def qrcode_func(m):
-    msg = bot.send_message(m.chat.id, 'Just give me your text/url/... , ^^ e.g. https://t.me/mrbni')
+    msg = bot.send_message(m.chat.id, 'Just give me your text/url/... , ^^ e.g. www.sample.com')
     bot.register_next_step_handler(msg, qr1)
 def qr1(m):
     if not m.text.startswith('/'):
