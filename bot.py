@@ -1,9 +1,10 @@
 from random import *
+import os
 from khayyam import JalaliDatetime
 from gtts import gTTS
 import telebot
 import qrcode
-TOKEN = '2039012139:AAFRlw6R9GZ7st44sQh_k-nwC47KbBcjAAA'
+TOKEN = os.environ['TOKEN']
 bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start'])
 def start_func(message):
