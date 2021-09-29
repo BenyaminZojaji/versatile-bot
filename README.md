@@ -9,4 +9,4 @@
   - [x] qrcode - make Qrcode 🧷
   - [x] help - show commands ℹ️
 - view:
-  - 
+  - ![sc](https://user-images.githubusercontent.com/77120507/135209039-42214fca-86f8-47b2-a7de-9651feb37192.png)
